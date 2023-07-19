@@ -1,0 +1,102 @@
+/* work sans font from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+/* shared styles */
+* {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.btn-prm {
+    border-radius: 8px;
+    padding: 20px 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: #FF900E;
+    color: #FFF;
+    cursor: pointer;
+    border: 0;
+    margin-top: 25px;
+}
+
+/* header styles */
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 40px 230px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-ttl{
+    color: #131313;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #424242;
+}
+
+/* banner styles */
+
+.bnr-cnt{
+    max-width: 680px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.bnr-ttl{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+.bnr-des{
+    color: #727272;
+    font-size: 0.88rem;
+    font-weight: 400;
+}
+
+.bnr img{
+    margin-top: 40px;
+    width: 100%;
+}
+
+/* responsive media queries */
+/* mobile devices */
+@media screen and (max-width: 576px){
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* tablet or medium devices */
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header{
+        padding: 35px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
