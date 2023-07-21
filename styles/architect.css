@@ -154,8 +154,59 @@ main {
     font-size: 1.11rem;
     font-weight: 600;
 }
+/* features section styles */
+.features{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
 
-/* sponsors section starts */
+.ftr-card-h{
+    color: #131313;
+    font-size: 1.11rem;
+    font-weight: 600;
+}
+
+.ftr-card{
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.features .tm-ttl{
+    border-left: 5px solid #FF900E;
+    padding-left: 15px;
+}
+.ftr-img img{
+    margin-left: 80px;
+    width: 100%;
+    height: 90%;
+}
+
+.ftr-btn{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 300px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.ftr-btn h2{
+    font-size: 3.5rem;
+    margin-top: 0;
+}
+
+.ftr-btn p{
+    font-size: 1.38rem;
+}
+
+/* sponsors section styles */
 .spnsr{
     text-align: center;
 }
@@ -190,12 +241,21 @@ main {
         gap: 20px;
     }
 
-    .tm-img-cnt {
+    .tm-img-cnt,
+    .features {
         grid-template-columns: 1fr;
     }
 
     main {
         padding-top: 30px;
+    }
+
+    .ftr-img img{
+        width: 100%;
+        margin-left:0;
+    }
+    .ftr-btn{
+     position: static;   
     }
 }
 
