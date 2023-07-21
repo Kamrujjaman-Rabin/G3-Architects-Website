@@ -7,6 +7,12 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+.text-grey{
+    color: #727272;
+    font-size: 0.88rem;
+    font-weight: 400;
+}
+
 .btn-prm {
     border-radius: 8px;
     padding: 20px 25px;
@@ -57,7 +63,7 @@ nav li a{
 /* banner styles */
 
 .bnr-cnt{
-    max-width: 680px;
+    max-width: 1200px;
     text-align: center;
     margin: 0 auto;
 }
@@ -68,15 +74,50 @@ nav li a{
     color: #131313;
 }
 
-.bnr-des{
-    color: #727272;
-    font-size: 0.88rem;
-    font-weight: 400;
-}
-
 .bnr img{
     margin-top: 40px;
     width: 100%;
+}
+
+/* main styles */
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 65px;
+}
+
+.tm-cnt{
+    display: flex;
+    align-items: center;
+}
+
+.tm-img-cnt{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.tm-cntnt{
+    padding-left: 55px;
+    padding-right: 55px;
+}
+.tm-ttl{
+    font-size: 2.5rem;
+}
+
+.tm-ttl .qck{
+    color: #727272;
+    font-weight: 500;
+}
+
+.tm-ttl .ftr{
+    color: #FF900E;
+    font-weight: 700;
+}
+
+.tm-des{
+    color: #727272;
+    font-size: 0.88rem;
 }
 
 /* responsive media queries */
@@ -85,8 +126,14 @@ nav li a{
     header{
         padding: 20px;
     }
-    nav{
+    nav, .tm-cnt{
         flex-direction: column;
+    }
+    .tm-img-cnt{
+        grid-template-columns: 1fr;
+    }
+    main{
+        padding-top: 30px;
     }
 }
 
@@ -96,7 +143,7 @@ nav li a{
     header{
         padding: 35px;
     }
-    nav{
+    nav, .tm-cnt{
         flex-direction: column;
     }
 }
